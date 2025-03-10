@@ -1,8 +1,9 @@
+#Bernardo luckman
 ### Verbo GET – listar todos
 GET http://localhost:8000/cliente/ HTTP/1.1
 
 ### Verbo GET – listar um
-GET http://localhost:8000/cliente/10 HTTP/1.1
+GET http://localhost:8000/cliente/1 HTTP/1.1
 
 ### Verbo POST – adicionar
 POST http://127.0.0.1:8000/cliente/ HTTP/1.1
@@ -15,15 +16,14 @@ content-type: application/json
 }
 
 ### Verbo PUT – atualiza
-PUT http://127.0.0.1:8000/cliente/2 HTTP/1.1
+PUT http://127.0.0.1:8000/cliente/1 HTTP/1.1
 content-type: application/json
 
 {
-    "nome" : "Bernardo luckman",
-    "cpf" : "222.456.789-00",
-    "telefone" : "49 22222-9999"
+    "nome" : "Bernardo luckman 2",
+    "cpf" : "222.456.789-02",
+    "telefone" : "49 22222-9992"
 }
 
 ### Verbo DELETE - excluir
-DELETE http://127.0.0.1:8000/cliente/3 HTTP/1.1
-#Bernardo luckman
+DELETE http://127.0.0.1:8000/cliente/1 HTTP/1.1

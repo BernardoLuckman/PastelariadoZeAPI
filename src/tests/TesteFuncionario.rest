@@ -1,24 +1,25 @@
+#bernardo luckman
 ### Verbo GET – listar todos
 GET http://localhost:8000/funcionario/ HTTP/1.1
 
 ### Verbo GET – listar um
-GET http://localhost:8000/funcionario/10 HTTP/1.1
+GET http://localhost:8000/funcionario/1 HTTP/1.1
 
 ### Verbo POST – adicionar
 POST http://127.0.0.1:8000/funcionario/ HTTP/1.1
 content-type: application/json
 
 {
-    "nome" : "Bernardo luckman",
+    "nome" : "Bernardo Luckman 2",
     "matricula" : "ma20210329",
-    "cpf" : "1",
+    "cpf" : "2",
     "telefone" : "tel2383738",
     "grupo" : 1,
     "senha" : "ee29eb4a8725678278ac4320e7"
 }
 
 ### Verbo PUT – atualiza
-PUT http://127.0.0.1:8000/funcionario/2 HTTP/1.1
+PUT http://127.0.0.1:8000/funcionario/1 HTTP/1.1
 content-type: application/json
 
 {
@@ -31,5 +32,4 @@ content-type: application/json
 }
 
 ### Verbo DELETE - excluir
-DELETE http://127.0.0.1:8000/funcionario/3 HTTP/1.1
-#Bernardo luckman
+DELETE http://127.0.0.1:8000/funcionario/1 HTTP/1.1
