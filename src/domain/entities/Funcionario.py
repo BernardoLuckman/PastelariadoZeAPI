@@ -9,3 +9,7 @@ class Funcionario(BaseModel):
     grupo: int
     senha: str = None
         # Bernardo Stramosk Luckman
+        
+class LoginFuncionario(BaseModel):
+    cpf: str
+    senha: str
